@@ -37,12 +37,14 @@
           </nav>
 
           <nav class="nav-down flex-justify-content-center">
-            <ul v-for= 'item in navDown' class="flex-justify-content-center">
-              <li >
-                <a href="#">{{item.link}}</a>
+            <ul class="flex-justify-content-center ">
+              <li  v-for='item in navDown'  >
+                <a  href="#">{{item.link}}</a>
                 <i class="fas fa-chevron-down"></i>
               </li>
-              <!-- <li>
+
+
+            <!-- <li class="lista">
                 <a href="#">Shop</a>
                 <i class="fas fa-chevron-down"></i>
               </li>
@@ -58,8 +60,12 @@
               <li>
                 <a href="#">Shop by Brand</a>
                 <i class="fas fa-chevron-down"></i>
-              </li> -->
-            </ul>
+              </li>
+            </ul>  -->
+
+
+
+
           </nav>
         </div>
       </header>
@@ -105,9 +111,78 @@
           </div>
         </section>
 
-        <section class="ciao">
+        <!-- Fourth section Browse by category -->
+        <section class="category">
+          <h3>Browse by category</h3>
+          <p>Augue purus et, tincidunt condimentum mauris. At nibh rutrum mi in.</p>
+          <p>Nisi, vitae interdum eleifend dui, consequat nulla rhoncus dictum. Viverra.</p>
+          <div class="container-box-4obj flex-around">
+            <div class="box">
+              <img src="img/product-9.jpg" alt="">
+              <p>
+                <a href="#">Bed(1)</a>
+              </p>
+
+            </div>
+            <div class="box">
+              <img src="img/product-3.jpg" alt="">
+              <p>
+                <a href="#">Food(6)</a>
+              </p>
+
+            </div>
+            <div class="box">
+              <img src="img/product-2.jpg" alt="">
+              <p>
+                <a href="#">Toys(6)</a>
+              </p>
+
+            </div>
+            <div class="box">
+              <img src="img/product-4.jpg" alt="">
+              <p>
+                <a href="#">Transport(7)</a>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!--Fifth section KIBBLE MOIST FROZEN -->
+        <section>
+          <div class="container-box-food flex-around">
+            <div class="box-food flex-column">
+              <h1 class="white">Kibble</h1>
+              <p>Dry dog food</p>
+              <img src="img/food-transparent-18.png" alt="">
+              <p>
+                <a href="#">Shop dry food</a>
+              </p>
+
+            </div>
+            <div class="box-food flex-column">
+              <h1 class="white">Moist</h1>
+              <p>Canned dog food</p>
+              <img src="img/food-transparent-17.png" alt="">
+              <p>
+                <a href="#">Shop moist food</a>
+              </p>
+
+            </div>
+            <div class="box-food flex-column">
+              <h1 class="white">Frozen</h1>
+              <p>Freeze-Dried dog food</p>
+              <img src="img/food-transparent-16.png" alt="">
+              <p>
+                <a href="#">Shop frozen food</a>
+              </p>
+
+            </div>
+
+          </div>
 
         </section>
+
+
       </main>
 
     </body>
