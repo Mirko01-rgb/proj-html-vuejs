@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+
+
+/* SCROlL-BAR */
+.scroll-bar{
+  height: 100%;
+  overflow-y: scroll;
+}
+
 /* Header */
 
 /* NAV-UP */
@@ -74,7 +82,7 @@ span{
   border-bottom: 1px solid black;
 }
 
-.flex-justify-content {
+.flex-justify-content-center {
   display: flex;
   justify-content: center;
   align-items: center
@@ -92,7 +100,80 @@ span{
 
 
 /* Main */
+/* First section INTERNATIONAL */
 .international{
-  height: 60px;
-  background-color: green;
+  height: 70px;
+  background-color: #1E3120;
+  background-image: url('../img/bg-transparent-3.png');
+  background-size: auto;
+}
+
+.grey{
+  color: grey;
+}
+
+.white{
+  color: white;
+}
+
+/* Second Section The best Animal supplies */
+.animal-supplies{
+  height: 700px;
+  background-image: url('../img/banner-5-2x-scaled.jpg');
+  background-size:cover;
+  padding-left: 30px;
+}
+
+.animal-supplies h4{
+  padding-top: 120px;
+  padding-bottom: 50px;
+}
+
+.animal-supplies h2{
+  font-size: 60px;
+  width:55%;
+  padding-bottom: 50px;
+}
+
+.animal-supplies p{
+  background-color: white;
+  width: 15%;
+  text-align: center;
+  padding: 13px;
+  border-radius: 21px;
+}
+
+.animal-supplies p a{
+  text-decoration: none;
+  color: black
+}
+
+
+/* Third Section Visit the SHOP */
+.visit-shop{
+  height: 120px;
+  background-color: #1E3120;
+  background-image: url('../img/bg-transparent-3.png');
+  background-size: auto;
+
+  padding-top: 15px;
+}
+
+.visit-shop img{
+  height: 100%;
+}
+
+.font-size{
+  font-size:22px;
+  padding: 0 20px;
+}
+
+
+
+
+
+
+
+.ciao{
+  height: 300px;
 }
