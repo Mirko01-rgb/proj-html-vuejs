@@ -37,12 +37,12 @@
           </nav>
 
           <nav class="nav-down flex-justify-content-center">
-            <ul class="flex-justify-content-center">
-              <li>
-                <a href="#">Home</a>
+            <ul v-for= 'item in navDown' class="flex-justify-content-center">
+              <li >
+                <a href="#">{{item.link}}</a>
                 <i class="fas fa-chevron-down"></i>
               </li>
-              <li>
+              <!-- <li>
                 <a href="#">Shop</a>
                 <i class="fas fa-chevron-down"></i>
               </li>
@@ -58,7 +58,7 @@
               <li>
                 <a href="#">Shop by Brand</a>
                 <i class="fas fa-chevron-down"></i>
-              </li>
+              </li> -->
             </ul>
           </nav>
         </div>
