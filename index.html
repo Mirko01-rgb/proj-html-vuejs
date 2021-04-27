@@ -40,11 +40,9 @@
             <ul class="flex-justify-content-center ">
               <li  v-for='item in navDown'  >
                 <a  href="#">{{item.link}}</a>
-                <i class="fas fa-chevron-down"></i>
+                <i v-if='item.chevron' class="fas fa-chevron-down"></i>
               </li>
-
-
-            <!-- <li class="lista">
+              <!-- <li class="lista">
                 <a href="#">Shop</a>
                 <i class="fas fa-chevron-down"></i>
               </li>
@@ -62,11 +60,7 @@
                 <i class="fas fa-chevron-down"></i>
               </li>
             </ul>  -->
-
-
-
-
-          </nav>
+            </nav>
         </div>
       </header>
 

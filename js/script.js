@@ -5,23 +5,29 @@ function initVue() {
           navDown:[
             {
               link: 'Home',
+              chevron:true
             },
             {
-              link: 'Shop'
+              link: 'Shop',
+              chevron:true
             },
             {
-              link: 'About'
+              link: 'About',
+              chevron:false
             },
             {
-              link: 'Blog'
+              link: 'Blog',
+              chevron:false,
             },
             {
-              link: 'Contact'
-            },
-            {
-              link: 'Shop by brand'
-            },
+              link: 'Contact',
+              chevron:false,
 
+            },
+            {
+              link: 'Shop by brand',
+              chevron:true
+            },
           ]
         },
         methods: {
