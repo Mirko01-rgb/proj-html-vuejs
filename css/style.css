@@ -329,7 +329,7 @@ span{
   color: grey;
 }
 
-.button-view-all > p{
+.button > p{
   text-align: center;
   background-color:#2A542A;
   width: 15%;
@@ -337,7 +337,7 @@ span{
   border-radius: 20px;
 }
 
-.button-view-all a{
+.button a{
   text-decoration: none;
   color: white;
 }
@@ -487,8 +487,12 @@ span{
   padding-bottom: 40px;
 }
 
+.container-box-tricks{
+  height: 460px;
+  /* background-color: red; */
+}
 .box-tips-tricks{
-  height: 272px;
+  height: 100%;
   width: 272px;
 }
 
@@ -499,4 +503,9 @@ span{
 .box-tips-tricks > h3 {
   font-size: 25px;
   padding: 20px 0;
+}
+
+.button > .button-read {
+  margin-bottom:120px;
+}
 }
