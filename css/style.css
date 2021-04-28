@@ -54,6 +54,11 @@
   justify-content: flex-end;
 }
 
+.flex-only-justify-center{
+  display: flex;
+  justify-content: center;
+}
+
 .flex-align-items-start{
   display: flex;
   justify-content: space-around;
@@ -385,7 +390,7 @@ span{
 }
 
 .box-users-testimonials{
-  height: 400px;
+  height: 350px;
   width: 300px;
   /* background-color: red; */
 }
@@ -410,4 +415,88 @@ span{
   font-size: 20px;
   margin: 20px 0;
 
+
+}
+
+
+ /* Ninth section Join our newsletter */
+
+.b-color{
+  height: 520px;
+  background: linear-gradient(180deg, #2A542A 15%, white 13%);
+  padding: 0 40px;
+
+}
+
+.container-join-newsletter{
+  height: 450px;
+  width: 100%;
+  /* background-color: blue; */
+  background-image: url('../img/banner-7-2x-scaled.jpg');
+  background-size:cover;
+  background-position: right;
+  padding-top: 60px;
+  padding-left: 150px;
+}
+
+.container-join-newsletter > h3 {
+  font-size: 60px;
+  padding-bottom: 30px;
+}
+
+.container-join-newsletter > p{
+  font-size: 23px;
+  width: 40%;
+  color: grey;
+  padding-bottom:50px;
+}
+
+.container-join-newsletter > input{
+  width: 350px;
+  padding: 20px;
+  border: none;
+  background-color: #F8F5F2;
+  border-radius: 25px;
+}
+
+.container-join-newsletter > span > a{
+  padding: 15px 50px;
+  background-color: #2A542A;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  margin-left: 20px;
+}
+
+
+/* Tenth section Get the best tips & trick */
+.container-tips-tricks{
+ padding: 0 40px;
+}
+
+.container-tips-tricks > h3{
+  text-align: center;
+  font-size: 40px;
+}
+
+.container-tips-tricks > p{
+  text-align: center;
+  font-size: 27px;
+  color: grey;
+  padding-top: 25px;
+  padding-bottom: 40px;
+}
+
+.box-tips-tricks{
+  height: 272px;
+  width: 272px;
+}
+
+.box-tips-tricks > img{
+  width: 100%;
+}
+
+.box-tips-tricks > h3 {
+  font-size: 25px;
+  padding: 20px 0;
 }
