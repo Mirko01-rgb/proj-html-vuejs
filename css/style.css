@@ -599,3 +599,26 @@ span{
     text-align: center;
     font-size: 20px;
 }
+
+
+/* footer */
+.first-part{
+  height: 500px;
+  background-color: #2A542A;
+  padding: 100px 40px;
+}
+
+.box-footer{
+  height: 350px;
+  width: 250px;
+  background-color: red;
+}
+
+.text-logo > p{
+  font-size: 30px;
+}
+
+.text-footer{
+ padding-top: 35px;
+ font-size: 20px;
+}

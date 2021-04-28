@@ -28,6 +28,26 @@ function initVue() {
               link: 'Shop by brand',
               chevron:true
             },
+          ],
+          info:[
+            {
+              title: 'Shop by brand',
+              voces:[
+                {
+                  bed:'Bed'
+                },
+                {
+                  food:'Food'
+                },
+                {
+                  toys:'Toys'
+                },
+                {
+                  transport:'Transport'
+                },
+
+              ]
+            },
           ]
         },
         methods: {
