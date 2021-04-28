@@ -408,19 +408,34 @@
 
         </div>
         <div class="box-footer">
-          <ul>
+          <!-- <ul>
             <li v-for='item in info'>
               <a href="#">{{item.title}}</a>
+              <li v-for='ele in item.voces'>
+                <a href="#">{{ele.link}}</a>
+              </li>
+
+
             </li>
-            <li v-for='item in info'>
-              <a href="#">{{item.voces[0].bed}}</a>
-            </li>
-          </ul>
+
+          </ul> -->
+
+          <ul v-for="item in items">
+            <li v-text="item.name"></li>
+           <ul v-for="sub in item.sub">
+             <li v-text="sub.title"></li>
+           </ul>
+         </ul>
 
         </div>
         <div class="box-footer">
-
-        </div>
+          <ul v-for="ele in links">
+            <li v-text="ele.names"></li>
+           <ul v-for="subs in ele.subs">
+             <li v-text="subs.titles"></li>
+           </ul>
+         </ul>
+       </div>
         <div class="box-footer">
 
         </div>

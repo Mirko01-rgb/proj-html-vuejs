@@ -34,22 +34,46 @@ function initVue() {
               title: 'Shop by brand',
               voces:[
                 {
-                  bed:'Bed'
+                  link:'Bed'
                 },
                 {
-                  food:'Food'
+                  link:'Food'
                 },
                 {
-                  toys:'Toys'
+                 link:'Toys'
                 },
                 {
-                  transport:'Transport'
+                  link:'Transport'
                 },
 
-              ]
-            },
-          ]
+              ]},
+
+          ],
+
+          items: [
+                {
+                  name:'Shop by brand' ,
+                  sub: [
+                    { title: 'Bed'},
+                    { title: 'Food'},
+                    { title: 'Toys'},
+                    { title: 'Transport'},
+                  ]},
+                ],
+
+                links: [
+                     {
+                       names:'Useful links' ,
+                       subs: [
+                         { titles: 'My account'},
+                         { titles: 'Orders'},
+                         { titles: 'Checkout'},
+                         { titles: 'Cart'},
+                       ]},
+                     ],
         },
+
+
         methods: {
 
         },
