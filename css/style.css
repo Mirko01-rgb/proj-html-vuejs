@@ -508,4 +508,45 @@ span{
 .button > .button-read {
   margin-bottom:120px;
 }
+
+
+/*  Eleventh section Find the best animal/food */
+.container-animal-food{
+  display: flex;
+}
+.box-animal-food{
+  height: 400px;
+  width: 50%;
+  /* background-color: red; */
+
+}
+
+.box-animal-food > h3{
+  font-size: 40px;
+  padding: 40px;
+}
+.box-animal{
+  background-image: url('../img/banner-8-2x.jpg');
+  background-size: cover;
+}
+
+.box-food-best{
+  background-image: url('../img/banner-9-2x.jpg');
+  background-size: cover;
+}
+
+.delivery-payment{
+  height: 200px;
+  background-color:#2A542A;
+  background-image: url('../img/bg-transparent-3.png');
+}
+
+.icon-text > i{
+  font-size: 55px;
+  padding-bottom: 20px;
+
+}
+
+.icon-text > p{
+  font-size: 22px;
 }
