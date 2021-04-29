@@ -42,7 +42,7 @@
         <!-- Nav DOWN -->
         <nav class="nav-down flex-justify-content-center">
           <ul class="flex-justify-content-center ">
-            <li class="margin" v-for='item in navDown'  >
+            <li class="margin-navDown" v-for='item in navDown'  >
               <a class="grey" href="#">{{item.link}}</a>
               <i v-if='item.chevron' class="fas fa-chevron-down grey"></i>
             </li>
@@ -96,7 +96,7 @@
             <div>
               <span class="white font-size">Get $25 OFF your first purchase of our homemade pet food!</span>
               <span class=" font-size">
-                <a class="grey" href="#">Visit the shop</a>
+                <a class="grey underline" href="#">Visit the shop</a>
               </span>
             </div>
           </div>
@@ -104,9 +104,9 @@
 
 
        <!-- Fourth/Fifth/Sixth/Seventh sections -->
-       <section class="category">
+       <section class="container-category">
          <!-- Fourth  section Browse by category -->
-         <section>
+         <section class="category">
            <h3>Browse by category</h3>
            <p>Augue purus et, tincidunt condimentum mauris. At nibh rutrum mi in.</p>
            <p>Nisi, vitae interdum eleifend dui, consequat nulla rhoncus dictum. Viverra.</p>
@@ -145,24 +145,24 @@
                 <h1 class="white">Kibble</h1>
                 <p>Dry dog food</p>
                 <img src="img/food-transparent-18.png" alt="">
-                <p>
-                  <a href="#">Shop dry food</a>
+                <p class="button-food">
+                  <a class="white" href="#">Shop dry food</a>
                 </p>
               </div>
               <div class="box-food flex-column">
                 <h1 class="white">Moist</h1>
                 <p>Canned dog food</p>
                 <img src="img/food-transparent-17.png" alt="">
-                <p>
-                  <a href="#">Shop moist food</a>
+                <p class="button-food">
+                  <a class="white" href="#">Shop moist food</a>
                 </p>
                 </div>
               <div class="box-food flex-column">
                 <h1 class="white">Frozen</h1>
                 <p>Freeze-Dried dog food</p>
                 <img src="img/food-transparent-16.png" alt="">
-                <p>
-                  <a href="#">Shop frozen food</a>
+                <p class="button-food">
+                  <a class="white" href="#">Shop frozen food</a>
                 </p>
               </div>
             </div>
@@ -179,10 +179,10 @@
 
           <!-- Seventh section All-times best sellers -->
           <section class="all-times">
-            <p>All-time best sellers</p>
-            <div class="button flex-end">
+            <p class="grey">All-time best sellers</p>
+            <div class="button-view flex-end">
               <p>
-               <a href="#">View all products</a>
+               <a class="white" href="#">View all products</a>
              </p>
             </div>
             <h3>Items everyone loves</h3>
@@ -293,9 +293,9 @@
 
               </div>
             </div>
-            <div class="button flex-justify-content-center">
+            <div class="button-view flex-justify-content-center">
               <p class="button-read">
-                <a href="#">Read all articles</a>
+                <a class="white" href="#">Read all articles</a>
               </p>
             </div>
           </div>

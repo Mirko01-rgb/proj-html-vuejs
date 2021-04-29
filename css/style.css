@@ -70,10 +70,11 @@
   justify-content: space-between;
   align-items: flex-start;
 }
-/* Header */
 
-/* NAV-UP */
 
+/* Start Header */
+
+/* Nav UP */
 .nav-up{
   padding: 18px 0 ;
   border-bottom: 1px solid lightgrey;
@@ -124,7 +125,7 @@ span{
 }
 
 
-/* nav-down */
+/* Nav DOWN  */
 .nav-down{
   height: 80px;
   border-bottom: 1px solid black;
@@ -134,14 +135,15 @@ li{
   list-style-type: none;
 }
 
-.margin{
+a {
+  text-decoration: none;
+}
+
+.margin-navDown{
   margin-left: 50px;
 }
 
-a {
-  text-decoration: none;
 
-}
 
 /* Main */
 /* First section INTERNATIONAL */
@@ -169,18 +171,18 @@ a {
   padding-left: 30px;
 }
 
-.animal-supplies h4{
+.animal-supplies > h4{
   padding-top: 140px;
   padding-bottom: 50px;
 }
 
-.animal-supplies h2{
+.animal-supplies > h2{
   font-size: 60px;
   width:55%;
   padding-bottom: 50px;
 }
 
-.animal-supplies p{
+.animal-supplies > p{
   background-color: white;
   width: 15%;
   text-align: center;
@@ -188,7 +190,7 @@ a {
   border-radius: 21px;
 }
 
-.animal-supplies p a{
+.animal-supplies > p > a{
   text-decoration: none;
   color: black
 }
@@ -200,12 +202,15 @@ a {
   background-color: #1E3120;
   background-image: url('../img/bg-transparent-3.png');
   background-size: auto;
-
   padding-top: 15px;
 }
 
-.visit-shop img{
+.visit-shop > img{
   height: 100%;
+}
+
+.underline{
+  text-decoration: underline;
 }
 
 .font-size{
@@ -215,12 +220,10 @@ a {
 
 
 /* Fourth section Browse by categor */
-.category{
+.container-category{
   min-height: 150px;
   padding: 90px 30px ;
 }
-
-
 
 .category > h3{
   text-align: center;
@@ -242,10 +245,9 @@ a {
 .box-category{
   width: 270px;
   height: 270px;
-  /* background-color: red; */
   margin-bottom: 1px;
-
-
+  /* debug */
+  /* background-color: red; */
 }
 
 .box-category > img{
@@ -260,7 +262,6 @@ a {
 
 .box-category   a{
   font-size: 23px;
-  text-decoration: none;
   color: black;
 }
 
@@ -276,25 +277,23 @@ a {
 
 }
 
-.box-food h1{
+.box-food > h1{
   font-size: 40px;
   padding-bottom: 20px;
 }
 
-.box-food p{
+.box-food > p{
   font-size: 20px;
   color: #529C5E;
 
 }
 
-.box-food img{
+.box-food > img{
   width: 70%;
 }
 
-.box-food p a{
-  color:white;
-  background-color: #529C5E;
-  text-decoration: none;
+.button-food {
+  background-color:#3D6F42;
   padding: 12px 20px;
   border-radius:22px;
 }
@@ -305,7 +304,7 @@ a {
   height: 500px;
   background-image: url('../img/banner-3-2x-scaled.jpg');
   background-size: cover;
-  margin-top:  90px;
+  margin-top: 90px;
 }
 
 .box-newArrivals > p{
@@ -321,11 +320,9 @@ a {
   padding: 10px 20px;
   background-color: white;
   border-radius: 20px;
-  text-decoration: none;
 }
 
-.button-learn a{
-  text-decoration: none;
+.button-learn > a{
   color:black;
 }
 
@@ -334,21 +331,16 @@ a {
 .all-times > p{
   padding-top: 80px;
   font-size: 20px;
-  color: grey;
 }
 
-.button > p{
+.button-view > p{
   text-align: center;
-  background-color:#2A542A;
+  background-color:#3D6F42;
   width: 15%;
   padding: 12px 0;
   border-radius: 20px;
 }
 
-.button a{
-  text-decoration: none;
-  color: white;
-}
 
 .all-times > h3{
   font-size: 45px;
@@ -359,6 +351,7 @@ a {
 .container-box-items-everyone > .box-items{
   height: 270px;
   width: 270px;
+  /* debug */
   /* background-color: green; */
 }
 
@@ -374,7 +367,7 @@ a {
 
 .box-items > p{
   text-align: center;
-  color: #2A542A;
+  color: #3D6F42;
   font-size: 24px;
 }
 
@@ -439,12 +432,13 @@ a {
 .container-join-newsletter{
   height: 450px;
   width: 100%;
-  /* background-color: blue; */
   background-image: url('../img/banner-7-2x-scaled.jpg');
   background-size:cover;
   background-position: right;
   padding-top: 60px;
   padding-left: 150px;
+  /* debug */
+  /* background-color: blue; */
 }
 
 .container-join-newsletter > h3 {
@@ -469,9 +463,8 @@ a {
 
 .button-subscribe{
   padding: 15px 50px;
-  background-color: #2A542A;
+  background-color: #3D6F42;
   color: white;
-  text-decoration: none;
   border-radius: 30px;
   margin-left: 20px;
 }
@@ -497,8 +490,10 @@ a {
 
 .container-box-tricks{
   height: 460px;
+  /* debug */
   /* background-color: red; */
 }
+
 .box-tips-tricks{
   height: 100%;
   width: 272px;
@@ -513,7 +508,7 @@ a {
   padding: 20px 0;
 }
 
-.button > .button-read {
+.button-view > .button-read {
   margin-bottom:120px;
 }
 
@@ -525,14 +520,15 @@ a {
 .box-animal-food{
   height: 400px;
   width: 50%;
+  /* debug */
   /* background-color: red; */
-
 }
 
 .box-animal-food > h3{
   font-size: 40px;
   padding: 40px;
 }
+
 .box-animal{
   background-image: url('../img/banner-8-2x.jpg');
   background-size: cover;
@@ -553,7 +549,6 @@ a {
 .icon-text > i{
   font-size: 55px;
   padding-bottom: 20px;
-
 }
 
 .icon-text > p{
@@ -562,7 +557,6 @@ a {
 
 
 /* Twelfth section New products arrival */
-
 .title-products > h1{
   text-align: center;
   font-size: 40px;
@@ -598,8 +592,8 @@ a {
 }
 
 .box-product > p{
-    text-align: center;
-    font-size: 20px;
+  text-align: center;
+  font-size: 20px;
 }
 
 
@@ -613,6 +607,7 @@ a {
 .box-footer{
   height: 280px;
   width: 250px;
+  /* debug */
   /* background-color: red; */
 }
 
@@ -629,16 +624,12 @@ a {
   margin-top: 35px;
 }
 
- li > .title {
+li > .title {
   font-size: 30px;
-  text-decoration: none;
-
 }
-
 
 li > .sub-title{
   font-size: 20px;
-  text-decoration: none;
 }
 
 .transparent{
@@ -651,16 +642,16 @@ li > .sub-title{
   font-size: 28px;
   text-align: center;
 }
+
 .email-width{
   width: 200px;
   text-align: center;
   margin-top: 35px;
   margin-bottom: 45px;
-
 }
 
 .color-button-subscribe{
-  background-color: #2A542A;
+  background-color: #3D6F42;
   font-size: 23px;
   margin-left: 0;
 }
@@ -675,7 +666,6 @@ li > .sub-title{
 .linear{
   height: 1px;
   background-color: grey;
-
 }
 
 .border{
