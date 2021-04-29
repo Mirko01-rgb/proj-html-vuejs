@@ -79,12 +79,12 @@
   border-bottom: 1px solid lightgrey;
 }
 
-.logo img{
+.logo > img{
  width: 40px;
  margin-right: 20px;
 }
 
-.logo p{
+.logo > p{
   font-weight: bold;
   font-size: 20px;
 }
@@ -104,7 +104,6 @@
   padding: 16px 50px;
   border-radius: 20px;
   background-color: #F3F4F3;
-
   border: none;
 }
 
@@ -131,14 +130,17 @@ span{
   border-bottom: 1px solid black;
 }
 
-.nav-down ul li{
-  margin-left: 50px;
+li{
   list-style-type: none;
 }
 
-.nav-down ul li a {
+.margin{
+  margin-left: 50px;
+}
+
+a {
   text-decoration: none;
-  color: grey;
+
 }
 
 /* Main */
@@ -380,7 +382,7 @@ span{
 /* Eighth section Users testimonials */
 .users-testimonials{
   height: 200px;
-  background-color:#2A542A;
+  background-color: #1E3120;
   margin-top: 90px;
   background-image: url('../img/bg-transparent-3.png');
 }
@@ -391,7 +393,7 @@ span{
 
 .container-box-users-testimonials{
   min-height: 50px;
-  background-color:#2A542A;
+  background-color: #1E3120;
 
 }
 
@@ -429,7 +431,7 @@ span{
 
 .b-color{
   height: 520px;
-  background: linear-gradient(180deg, #2A542A 15%, white 13%);
+  background: linear-gradient(180deg,  #1E3120 15%, white 13%);
   padding: 0 40px;
 
 }
@@ -457,7 +459,7 @@ span{
   padding-bottom:50px;
 }
 
-.container-join-newsletter > input{
+.email{
   width: 350px;
   padding: 20px;
   border: none;
@@ -465,7 +467,7 @@ span{
   border-radius: 25px;
 }
 
-.container-join-newsletter > span > a{
+.button-subscribe{
   padding: 15px 50px;
   background-color: #2A542A;
   color: white;
@@ -543,7 +545,7 @@ span{
 
 .delivery-payment{
   height: 200px;
-  background-color:#2A542A;
+  background-color: #1E3120;
   background-image: url('../img/bg-transparent-3.png');
 
 }
@@ -602,16 +604,16 @@ span{
 
 
 /* footer */
-.first-part{
-  height: 500px;
-  background-color: #2A542A;
-  padding: 100px 40px;
+.first-part-footer{
+  height: 410px;
+  background-color: #1E3120;
+  padding: 60px 40px;
 }
 
 .box-footer{
-  height: 350px;
+  height: 280px;
   width: 250px;
-  background-color: red;
+  /* background-color: red; */
 }
 
 .text-logo > p{
@@ -621,4 +623,78 @@ span{
 .text-footer{
  padding-top: 35px;
  font-size: 20px;
+}
+
+.li-sub-title{
+  margin-top: 35px;
+}
+
+ li > .title {
+  font-size: 30px;
+  text-decoration: none;
+
+}
+
+
+li > .sub-title{
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.transparent{
+  background-image: url('../img/bg-transparent-3.png');
+  background-color: #264229;
+  border-radius: 10px;
+}
+
+.title-newsletter{
+  font-size: 28px;
+  text-align: center;
+}
+.email-width{
+  width: 200px;
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 45px;
+
+}
+
+.color-button-subscribe{
+  background-color: #2A542A;
+  font-size: 23px;
+  margin-left: 0;
+}
+
+.second-part-footer{
+  height: 200px;
+  background-color: #1E3120;
+  padding: 0 40px;
+
+}
+
+.linear{
+  height: 1px;
+  background-color: grey;
+
+}
+
+.border{
+  border: none;
+}
+
+.list-footer{
+  font-size: 18px;
+}
+
+.margin-footer-icons{
+  margin: 10px;
+}
+
+.margin-footer-icons{
+  font-size: 20px;
+}
+
+.copyright{
+  height: 80px;
+  background-color: black;
 }

@@ -70,8 +70,31 @@ function initVue() {
                          { titles: 'Checkout'},
                          { titles: 'Cart'},
                        ]},
-                     ],
+                    ],
+
+                    navDownFooter:[
+                      {
+                        voces: 'Home',
+                      },
+                      {
+                        voces: 'About',
+                      },
+                      {
+                        voces: 'Blog',
+                        },
+                      {
+                        voces: 'Contact',
+
+                      },
+                      {
+                        voces: 'Shop',
+
+
+                      },
+                    ],
         },
+
+
 
 
         methods: {
