@@ -12,7 +12,6 @@
   overflow-y: scroll;
 }
 
-
 /* Vari tipi di display flex */
 .flex-between{
   display: flex;
@@ -143,6 +142,9 @@ a {
   margin-left: 50px;
 }
 
+.color-hover:hover{
+  color: black;
+}
 
 
 /* Main */
@@ -162,6 +164,10 @@ a {
   color: white;
 }
 
+.black{
+  color: black;
+}
+
 
 /* Second Section The best Animal supplies */
 .animal-supplies{
@@ -169,6 +175,7 @@ a {
   background-image: url('../img/banner-5-2x-scaled.jpg');
   background-size:cover;
   padding-left: 30px;
+  filter:brightness(0.9);
 }
 
 .animal-supplies > h4{
@@ -188,11 +195,11 @@ a {
   text-align: center;
   padding: 13px;
   border-radius: 21px;
+
 }
 
-.animal-supplies > p > a{
-  text-decoration: none;
-  color: black
+.button-hover:hover{
+  background-color:#3D6F42;
 }
 
 
@@ -219,10 +226,10 @@ a {
 }
 
 
-/* Fourth section Browse by categor */
+/* Fourth section Browse by category */
 .container-category{
   min-height: 150px;
-  padding: 90px 30px ;
+  padding: 90px 30px 0px;
 }
 
 .category > h3{
@@ -240,37 +247,39 @@ a {
 
 .container-box-4obj{
   padding: 60px 0 120px 0 ;
+  /* debug*/
+  /* background-color: yellow; */
 }
 
-.box-category{
+.box-img-category{
   width: 270px;
   height: 270px;
-  margin-bottom: 1px;
   /* debug */
-  /* background-color: red; */
+   /* background-color: red; */
 }
 
-.box-category > img{
+.box-img-category > img{
   width: 100%;
-  padding-bottom: 20px;
-
 }
 
-.box-category > p{
-  text-align: center;
+.box-text-category{
+  height: 60px;
+  /* debug */
+  /* box-text-category */
 }
 
-.box-category   a{
+.box-text-category   a{
   font-size: 23px;
   color: black;
 }
 
 
+
 /* Fifth section KIBBLE MOIST FROZEN */
 .box-food{
-  width: 400px;
-  height: 600px;
-  background-color: #1E3120;
+  width: 390px;
+  height: 590px;
+  background-color: rgba(30, 49, 32);
   background-image: url('../img/bg-transparent-3.png');
   background-size: auto;
   padding-top: 70px;
@@ -299,12 +308,26 @@ a {
 }
 
 
+.box-food{
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+ .box-food:hover{
+ -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
 /* Sixth section New arrivals weekly  */
 .box-newArrivals{
   height: 500px;
   background-image: url('../img/banner-3-2x-scaled.jpg');
   background-size: cover;
   margin-top: 90px;
+  filter:brightness(0.9);
 }
 
 .box-newArrivals > p{
@@ -322,18 +345,18 @@ a {
   border-radius: 20px;
 }
 
-.button-learn > a{
-  color:black;
+.button-learn:hover{
+  background-color:#3D6F42;
 }
 
 
 /* Seventh section All-times best sellers  */
-.all-times > p{
+.all-times > p {
   padding-top: 80px;
   font-size: 20px;
 }
 
-.button-view > p{
+.button-view{
   text-align: center;
   background-color:#3D6F42;
   width: 15%;
@@ -347,29 +370,49 @@ a {
   padding-bottom: 90px;
 }
 
+.container-box-items-everyone {
+  /* background-color: red; */
+}
 
-.container-box-items-everyone > .box-items{
+.box-items-img{
   height: 270px;
   width: 270px;
   /* debug */
   /* background-color: green; */
 }
 
-.box-items > img{
+.box-items-text{
+  height: 90px;
+  width: 270px;
+  /*  debug */
+  /* background-color: yellow; */
+}
+
+.box-items-img > img{
   width: 100%;
 }
 
-.box-items > h4{
+.box-items-text > h4{
   font-size: 22px;
   text-align: center;
   padding: 20px 0;
 }
 
-.box-items > p{
+.box-items-text > p{
   text-align: center;
   color: #3D6F42;
   font-size: 24px;
+
 }
+
+.button-view:hover{
+  background-color: #1E3120;
+}
+
+.box-items-img:hover {
+  filter:sepia(0.1);
+}
+
 
 
 /* Eighth section Users testimonials */
@@ -415,18 +458,14 @@ a {
   text-align: center;
   font-size: 20px;
   margin: 20px 0;
-
-
 }
 
 
- /* Ninth section Join our newsletter */
-
+/* Ninth section Join our newsletter */
 .b-color{
   height: 520px;
   background: linear-gradient(180deg,  #1E3120 15%, white 13%);
   padding: 0 40px;
-
 }
 
 .container-join-newsletter{
@@ -437,6 +476,7 @@ a {
   background-position: right;
   padding-top: 60px;
   padding-left: 150px;
+  filter:brightness(0.9);
   /* debug */
   /* background-color: blue; */
 }
@@ -464,11 +504,13 @@ a {
 .button-subscribe{
   padding: 15px 50px;
   background-color: #3D6F42;
-  color: white;
   border-radius: 30px;
   margin-left: 20px;
 }
 
+.button-subscribe:hover{
+  background-color:#1E3120;
+}
 
 /* Tenth section Get the best tips & trick */
 .container-tips-tricks{
@@ -494,21 +536,30 @@ a {
   /* background-color: red; */
 }
 
-.box-tips-tricks{
-  height: 100%;
+.box-tips-tricks-img{
+  height: 272px;
   width: 272px;
+  /* debug */
+  /* background-color: green; */
 }
 
-.box-tips-tricks > img{
+.box-tips-tricks-text{
+  height: 130px;
+  width: 272px;
+  /* debug */
+  /* background-color: yellow; */
+}
+
+.box-tips-tricks-img > img{
   width: 100%;
 }
 
-.box-tips-tricks > h3 {
+.box-tips-tricks-text > h3 {
   font-size: 25px;
   padding: 20px 0;
 }
 
-.button-view > .button-read {
+.margin-read-all-articles{
   margin-bottom:120px;
 }
 
@@ -517,6 +568,7 @@ a {
 .container-animal-food{
   display: flex;
 }
+
 .box-animal-food{
   height: 400px;
   width: 50%;
@@ -572,32 +624,42 @@ a {
 
 .container-first-3-box{
   padding: 0 40px;
-  height: 550px;
-
+  /* debug */
+  /* background-color: red; */
 }
-.box-product{
+
+.box-product-img{
   width: 390px;
   height: 390px;
 }
 
-.box-product > img{
+.box-product-text{
+  width: 390px;
+  height: 120px;
+  /* debug */
+  /* background-color: green; */
+}
+
+.box-product-img > img{
   width: 100%;
 }
 
-.box-product > h4{
+.box-product-text > h4{
   text-align: center;
   font-size: 25px;
   padding-top: 20px;
   padding-bottom: 10px;
 }
 
-.box-product > p{
+.box-product-text > p{
   text-align: center;
   font-size: 20px;
 }
 
 
 /* footer */
+
+/* First section footer */
 .first-part-footer{
   height: 410px;
   background-color: #1E3120;
@@ -656,6 +718,8 @@ li > .sub-title{
   margin-left: 0;
 }
 
+
+/* Second section Footer */
 .second-part-footer{
   height: 200px;
   background-color: #1E3120;
@@ -678,12 +742,23 @@ li > .sub-title{
 
 .margin-footer-icons{
   margin: 10px;
-}
-
-.margin-footer-icons{
   font-size: 20px;
 }
 
+.voces-hover:hover{
+  color: white;
+}
+
+.links-hover:hover{
+  color: grey;
+}
+
+.icon-footer:hover{
+  color: grey;
+}
+
+
+/* Third section Footer */
 .copyright{
   height: 80px;
   background-color: black;

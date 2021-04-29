@@ -88,16 +88,11 @@ function initVue() {
                       },
                       {
                         voces: 'Shop',
-
-
                       },
                     ],
         },
 
-
-
-
-        methods: {
+      methods: {
 
         },
 

@@ -43,7 +43,7 @@
         <nav class="nav-down flex-justify-content-center">
           <ul class="flex-justify-content-center ">
             <li class="margin-navDown" v-for='item in navDown'  >
-              <a class="grey" href="#">{{item.link}}</a>
+              <a class="grey color-hover" href="#">{{item.link}}</a>
               <i v-if='item.chevron' class="fas fa-chevron-down grey"></i>
             </li>
           </ul>
@@ -82,8 +82,8 @@
           <div class="animal-supplies">
             <h4 class="white">FIND THE BEST ANIMAL SUPPLIES</h4>
             <h2 class="white">We know animals are a part of your family, let us help take care of them.</h2>
-            <p>
-              <a href="#">Learn more about us</a>
+            <p class="button-hover">
+              <a class="black" href="#">Learn more about us</a>
             </p>
           </div>
        </section>
@@ -105,35 +105,55 @@
 
        <!-- Fourth/Fifth/Sixth/Seventh sections -->
        <section class="container-category">
+
          <!-- Fourth  section Browse by category -->
          <section class="category">
            <h3>Browse by category</h3>
            <p>Augue purus et, tincidunt condimentum mauris. At nibh rutrum mi in.</p>
            <p>Nisi, vitae interdum eleifend dui, consequat nulla rhoncus dictum. Viverra.</p>
            <div class="container-box-4obj flex-between">
-             <div class="box-category">
-               <img src="img/product-9.jpg" alt="">
-               <p>
-                 <a href="#">Bed(1)</a>
-               </p>
+             <div>
+               <div class="box-img-category">
+                 <img src="img/product-9.jpg" alt="">
+               </div>
+               <div class="box-text-category flex-justify-content-center">
+                 <p>
+                   <a href="#">Bed(1)</a>
+                 </p>
+               </div>
              </div>
-             <div class="box-category">
-               <img src="img/product-3.jpg" alt="">
-               <p>
-                 <a href="#">Food(6)</a>
-               </p>
+
+             <div>
+               <div class="box-img-category">
+                  <img src="img/product-3.jpg" alt="">
+               </div>
+               <div class="box-text-category flex-justify-content-center">
+                 <p>
+                   <a href="#">Food(6)</a>
+                 </p>
+               </div>
              </div>
-             <div class="box-category">
-               <img src="img/product-2.jpg" alt="">
-               <p>
-                 <a href="#">Toys(6)</a>
-               </p>
+
+             <div>
+               <div class="box-img-category">
+                  <img src="img/product-2.jpg" alt="">
+               </div>
+               <div class="box-text-category flex-justify-content-center">
+                 <p>
+                   <a href="#">Toys(6)</a>
+                 </p>
+               </div>
              </div>
-             <div class="box-category">
-               <img src="img/product-4.jpg" alt="">
-               <p>
-                 <a href="#">Transport(7)</a>
-               </p>
+
+             <div>
+               <div class="box-img-category">
+                  <img src="img/product-4.jpg" alt="">
+               </div>
+               <div class="box-text-category flex-justify-content-center">
+                 <p>
+                    <a href="#">Transport(7)</a>
+                 </p>
+               </div>
              </div>
            </div>
           </section>
@@ -173,39 +193,58 @@
             <p class="white">FIND THE BEST ANIMAL SUPPLIES</p>
             <h3 class="white">New arrivals weekly</h3>
             <p class="button-learn">
-             <a href="#">Learn about us</a>
+             <a class="black" href="#">Learn about us</a>
             </p>
           </section>
 
           <!-- Seventh section All-times best sellers -->
           <section class="all-times">
             <p class="grey">All-time best sellers</p>
-            <div class="button-view flex-end">
-              <p>
+            <div class=" flex-end">
+              <p class="button-view">
                <a class="white" href="#">View all products</a>
              </p>
             </div>
             <h3>Items everyone loves</h3>
             <div class="container-box-items-everyone flex-between">
-              <div class="box-items">
-                <img src="img/product-21.jpg" alt="foto">
-                <h4>Transport cage</h4>
-                <p>$25.00</p>
+              <div>
+                <div class="box-items-img ">
+                 <img src="img/product-21.jpg" alt="foto">
+                </div>
+                <div class="box-items-text">
+                  <h4>Transport cage</h4>
+                  <p>$25.00</p>
+                </div>
               </div>
-              <div class="box-items">
-                <img src="img/product-20.jpg" alt="foto">
-                <h4>Dog leash</h4>
-                <p>$25.00</p>
+
+              <div>
+                <div class="box-items-img ">
+                  <img src="img/product-20.jpg" alt="foto">
+                </div>
+                <div class="box-items-text">
+                  <h4>Dog leash</h4>
+                  <p>$25.00</p>
+                </div>
               </div>
-              <div class="box-items">
-                <img src="img/product-16.jpg" alt="foto">
-                <h4>Animal transport cage</h4>
-                <p> $25.00</p>
+
+              <div>
+                <div class="box-items-img ">
+                 <img src="img/product-16.jpg" alt="foto">
+                </div>
+                <div class="box-items-text">
+                  <h4>Animal transport cage</h4>
+                  <p> $25.00</p>
+                </div>
               </div>
-              <div class="box-items">
-                <img src="img/product-11.jpg" alt="foto">
-                <h4>Colorful cat leash</h4>
-                <p> $25.00</p>
+
+              <div>
+                <div class="box-items-img ">
+                 <img src="img/product-11.jpg" alt="foto">
+                </div>
+                <div class="box-items-text">
+                  <h4>Colorful cat leash</h4>
+                  <p> $25.00</p>
+                </div>
               </div>
             </div>
           </section>
@@ -254,7 +293,7 @@
              <p>Volutpat vel turpis nulla lorem sed semper. Aliquam sagittis sem libero viverra vehicula nullam ut nisl.</p>
              <input class="email" type="email" name="" value="" placeholder="Insert your email...*">
              <span>
-               <a class="button-subscribe"href="#">Subscribe</a>
+               <a class="button-subscribe white"href="#">Subscribe</a>
              </span>
            </div>
          </div>
@@ -267,34 +306,48 @@
             <h3>Get the best tips & tricks</h3>
             <p>Recent articles</p>
             <div class=" container-box-tricks  flex-between">
-              <div class="box-tips-tricks">
-                <img src="img/blog-1.jpg" alt="foto-blog">
-                <h3>How to ‘loose leash walk’ your dog</h3>
-                <p>April 21st, 2020</p>
+              <div>
+                <div class="box-tips-tricks-img">
+                  <img src="img/blog-1.jpg" alt="foto-blog">
+                </div>
+                <div class="box-tips-tricks-text">
+                  <h3>How to ‘loose leash walk’ your dog</h3>
+                  <p>April 21st, 2020</p>
+                </div>
               </div>
 
-              <div class="box-tips-tricks">
+              <div>
+                <div class="box-tips-tricks-img">
                 <img src="img/blog-2.jpg" alt="foto-blog">
-                <h3>Stop cats from scratching furniture</h3>
-                <p>April 19th, 2020</p>
+                </div>
+                <div class="box-tips-tricks-text">
+                  <h3>Stop cats from scratching furniture</h3>
+                  <p>April 19th, 2020</p>
+                </div>
               </div>
 
-              <div class="box-tips-tricks">
-                 <img src="img/blog-3.jpg" alt="foto-blog">
-                 <h3>Where to buy the best pet food</h3>
-                 <p>April 18th, 2020</p>
-
+              <div>
+                <div class="box-tips-tricks-img">
+                <img src="img/blog-3.jpg" alt="foto-blog">
+                </div>
+                <div class="box-tips-tricks-text">
+                  <h3>Where to buy the best pet food</h3>
+                  <p>April 18th, 2020</p>
+                </div>
               </div>
 
-              <div class="box-tips-tricks">
-                 <img src="img/blog-4.jpg" alt="foto-blog">
-                 <h3>Proper care for your pet toys</h3>
-                 <p>April 17th, 2020</p>
-
+              <div>
+                <div class="box-tips-tricks-img">
+                  <img src="img/blog-4.jpg" alt="foto-blog">
+                </div>
+                <div class="box-tips-tricks-text">
+                  <h3>Proper care for your pet toys</h3>
+                  <p>April 17th, 2020</p>
+                </div>
               </div>
             </div>
-            <div class="button-view flex-justify-content-center">
-              <p class="button-read">
+            <div class="flex-justify-content-center">
+              <p class="button-view margin-read-all-articles">
                 <a class="white" href="#">Read all articles</a>
               </p>
             </div>
@@ -348,39 +401,69 @@
             <p>Latest products</p>
           </div>
 
-          <div class="container-first-3-box flex-between-start">
-            <div class="box-product">
-              <img src="img/product-8.jpg" alt="foto">
-              <h4>Colored pet bed</h4>
-              <p>$25.00</p>
-            </div>
-            <div class="box-product">
-              <img src="img/product-2.jpg" alt="foto">
-              <h4>Colorful ball set</h4>
-              <p>$29.00</p>
-            </div>
-            <div class="box-product">
-              <img src="img/product-3.jpg" alt="foto">
-              <h4>Dog bone</h4>
-              <p>$18.00</p>
-            </div>
-          </div>
+          <div class="container-first-3-box">
+            <div class="flex-between-start">
+              <div>
+                <div class="box-product-img">
+                  <img src="img/product-8.jpg" alt="foto">
+                </div>
+                <div class="box-product-text">
+                  <h4>Colored pet bed</h4>
+                  <p>$25.00</p>
+                </div>
+              </div>
 
-          <div class="container-first-3-box flex-between-start">
-            <div class="box-product">
-              <img src="img/product-4.jpg" alt="foto">
-              <h4>Animal transport bag</h4>
-              <p>$29.00</p>
+              <div>
+                <div class="box-product-img">
+                  <img src="img/product-2.jpg" alt="foto">
+                </div>
+                <div class="box-product-text">
+                  <h4>Colorful ball set</h4>
+                  <p>$29.00</p>
+                </div>
+              </div>
+
+              <div>
+                <div class="box-product-img">
+                <img src="img/product-3.jpg" alt="foto">
+                </div>
+                <div class="box-product-text">
+                  <h4>Dog bone</h4>
+                  <p>$18.00</p>
+                </div>
+              </div>
             </div>
-            <div class="box-product">
-              <img src="img/product-5.jpg" alt="foto">
-              <h4>Animal transport cage</h4>
-              <p>$35.00</p>
-            </div>
-            <div class="box-product">
-              <img src="img/product-10.jpg" alt="foto">
-              <h4>  Closable cat litter</h4>
-              <p>$16.00</p>
+
+            <div class="flex-between-start">
+              <div>
+                <div class="box-product-img">
+                  <img src="img/product-4.jpg" alt="foto">
+                </div>
+                <div class="box-product-text">
+                  <h4>Animal transport bag</h4>
+                  <p>$29.00</p>
+                </div>
+              </div>
+
+              <div>
+                <div class="box-product-img">
+                  <img src="img/product-5.jpg" alt="foto">
+                </div>
+                <div class="box-product-text">
+                  <h4>Animal transport cage</h4>
+                  <p>$35.00</p>
+                </div>
+              </div>
+
+              <div>
+                <div class="box-product-img">
+                  <img src="img/product-10.jpg" alt="foto">
+                </div>
+                <div class="box-product-text">
+                 <h4>Closable cat litter</h4>
+                 <p>$16.00</p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -415,7 +498,7 @@
                </li>
                <ul v-for="sub in item.sub">
                  <li class="li-sub-title">
-                   <a class="sub-title white" v-text="sub.title" href="#"></a>
+                   <a class="sub-title white links-hover" v-text="sub.title" href="#"></a>
                  </li>
                </ul>
              </ul>
@@ -428,7 +511,7 @@
                 </li>
                <ul v-for="subs in ele.subs">
                  <li class="li-sub-title">
-                   <a class="sub-title white" v-text="subs.titles"  href="#"></a>
+                   <a class="sub-title white links-hover" v-text="subs.titles"  href="#"></a>
                  </li>
                </ul>
              </ul>
@@ -438,7 +521,7 @@
               <p class="white title-newsletter">Subscribe to our newsletter</p>
               <input class="email email-width"type="email" name="" value="" placeholder="Insert your email...*">
               <p>
-                <a class="button-subscribe color-button-subscribe" href="#">Subscribe</a>
+                <a class="button-subscribe color-button-subscribe white" href="#">Subscribe</a>
               </p>
             </div>
           </div>
@@ -450,8 +533,8 @@
            <div class="linear"></div>
            <nav class="nav-down border  flex-justify-content-center">
              <ul class="flex-justify-content-center ">
-               <li  class="margin" v-for='item in navDownFooter'  >
-                 <a class="list-footer grey" href="#" >{{item.voces}}</a>
+               <li  class="margin-footer-icons" v-for='item in navDownFooter'  >
+                 <a class="list-footer grey voces-hover" href="#" >{{item.voces}}</a>
                </li>
              </ul>
            </nav>
@@ -459,16 +542,16 @@
            <nav class="nav-down border  flex-justify-content-center">
              <ul class="flex-justify-content-center ">
                <li class="margin-footer-icons">
-                 <a class="white" href="#"><i class="fab fa-facebook-f"></i></a>
+                 <a class="white icon-footer" href="#"><i class="fab fa-facebook-f"></i></a>
                </li>
                <li class="margin-footer-icons">
-                 <a class="white" href="#"><i class="fab fa-twitter"></i></a>
+                 <a class="white icon-footer" href="#"><i class="fab fa-twitter"></i></a>
                </li>
                <li class="margin-footer-icons">
-                 <a class="white" href="#"><i class="fab fa-instagram"></i></a>
+                 <a class="white icon-footer" href="#"><i class="fab fa-instagram"></i></a>
                </li>
                <li class="margin-footer-icons">
-                 <a class="white" href="#"><i class="fab fa-youtube"></i></a>
+                 <a class="white icon-footer" href="#"><i class="fab fa-youtube"></i></a>
                </li>
              </ul>
            </nav>
